@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
       <body >
 
           <Header/>
-          <main className="w-full">
+          <main>
             {children}
           </main>
           <Footer/>

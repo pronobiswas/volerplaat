@@ -11,10 +11,10 @@ export default function HowItsWork() {
     return (
         <>
             <section className='w-full flex justify-center'>
-                <div className='HowItsWork_wrapper w-full max-w-[1712px] flex bg-[url("/howItsWork.png")] py-14 px-20'>
+                <div className='HowItsWork_wrapper w-full max-w-[1712px]   py-14 px-20 flex justify-between items-center'>
                     {/* ---how_its_work_content--- */}
-                    <div className='how_its_work_content'>
-                        <h4>How it works</h4>
+                    <div className='w-full max-w-[438px] text-white'>
+                        <h4 className='text-2xl mb-6'>How it works</h4>
                         <p>We create smart, easy-to-use tools that simplify floor plate design and ordering. Our goal is to make layout customization fast, accurate, and effortless for everyone</p>
                     </div>
                     {/* ---how_its_work_slider--- */}
@@ -40,7 +40,7 @@ export default function HowItsWork() {
                             {["Slide 1", "Slide 2", "Slide 3", "Slide 4", "Slide 5", "Slide 6"].map((text, i) => (
                                 <SwiperSlide key={i}>
                                     <div className="aspect-[378/433] flex items-center justify-center bg-white ">
-                                        {text}
+                                        {text}   
                                     </div>
                                 </SwiperSlide>
                             ))}
@@ -51,5 +51,4 @@ export default function HowItsWork() {
         </>
     )
 }
-
-{/* <img src="/howItsWork.png" alt="How it works" /> */ }
+// bg-[url("/howItsWork.png")]
