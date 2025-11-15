@@ -20,7 +20,7 @@ export default function RootLayout({ children }) {
       <body >
 
           <Header/>
-          <main className="p-5 bg-black text-white">
+          <main className="w-full">
             {children}
           </main>
           <Footer/>

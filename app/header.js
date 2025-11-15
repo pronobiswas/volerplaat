@@ -4,16 +4,20 @@ import { IoMdCart } from 'react-icons/io'
 export default function Header() {
   return (
     <header>
-      <nav className='flex items-center justify-between'>
+      <nav className='flex items-center justify-between py-7 px-5'>
         {/* ---logo---- */}
-        <div className='w-[220px] h-9 bg-gray-400'></div>
+        <div className='w-full max-w-[220px]'>
+          <img src={"/headerLogo.png"} className='w-ful aspect-[220/35] object-cover'/>
+        </div>
         {/* ----menu--- */}
-        <ul className='flex gap-6'>
-          <li>Home</li>
-          <li>About us</li>
-          <li>How it Works</li>
-          <li>Contact</li>
-        </ul>
+        <div className='hidden lg:block'>
+          <ul className='flex gap-6'>
+            <li>Home</li>
+            <li>About us</li>
+            <li>How it Works</li>
+            <li>Contact</li>
+          </ul>
+        </div>
         <div className='members flex items-center gap-5'>
           <span>Login</span>
           <span>|</span>
