@@ -240,7 +240,6 @@ const ShapePreview3 = () => {
                 position: "relative",
                 overflow: "hidden", 
                 padding: "10px",
-                background:"green",
             }}
         >
             {/* Stage-level dimensions (total width/height) */}
